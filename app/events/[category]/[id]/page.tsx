@@ -2,16 +2,16 @@ import React from 'react';
 
 interface PageProps {
   params: {
-    category: string;
+    id: string;
   }; 
 }
 
 const Page: React.FC<PageProps> = async ({ params }) => {
-  const {category} = await params;
+  const {id} = await params;
 
   return (
     <div>
-      <h1>My Post: {category}</h1>
+      <h1>Children: {id}</h1>
     </div>
   );
 };
