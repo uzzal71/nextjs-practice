@@ -1,8 +1,11 @@
+import React from 'react';
 
-const Page = () => {
-  return (
-    <div>Events</div>
-  )
+interface IProps {
+  title?: string;
 }
 
-export default Page;
+const Events: React.FC<IProps> = () => {
+  return <div>Events</div>;
+};
+
+export default Events;

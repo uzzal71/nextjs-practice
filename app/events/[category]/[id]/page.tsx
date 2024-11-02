@@ -1,19 +1,20 @@
 import React from 'react';
 
-interface PageProps {
+interface IProps {
   params: {
     id: string;
+    category:  string;
   }; 
 }
 
-const Page: React.FC<PageProps> = async ({ params }) => {
-  const {id} = await params;
+const Event: React.FC<IProps> = async ({ params }) => {
+  const {id, category} = await params;
 
   return (
     <div>
-      <h1>Children: {id}</h1>
+      <h1>Children: {id} - {category}</h1>
     </div>
   );
 };
 
-export default Page;
+export default Event;

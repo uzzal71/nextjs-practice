@@ -1,12 +1,12 @@
 import React from 'react';
 
-interface PageProps {
+interface IProps {
   params: {
     category: string;
   }; 
 }
 
-const Page: React.FC<PageProps> = async ({ params }) => {
+const EventCategory: React.FC<IProps> = async ({ params }) => {
   const {category} = await params;
 
   return (
@@ -16,4 +16,4 @@ const Page: React.FC<PageProps> = async ({ params }) => {
   );
 };
 
-export default Page;
+export default EventCategory;
